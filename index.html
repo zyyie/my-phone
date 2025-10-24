@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HONOR 400 Pro - Official Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <style>
+        .hero-section {
+            background-color: #f5f5f5;
+            color: #333;
+            padding: 120px 0;
+            min-height: 80vh;
+        }
+        .feature-card {
+            transition: transform 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .spec-section {
+            background-color: #f8f9fa;
+        }
+        .gallery-item {
+            margin-bottom: 20px;
+        }
+        .gallery-item img {
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .btn-primary {
+            background-color: #000;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #333;
+            transform: translateY(-2px);
+        }
+        .btn-outline-secondary {
+            border: none;
+            color: #333;
+            padding: 12px 30px;
+            text-decoration: none;
+        }
+        .btn-outline-secondary:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+        .phone-container {
+            position: relative;
+            height: 500px;
+        }
+        .phone-back {
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            z-index: 1;
+            transform: rotate(-15deg);
+            animation: floatBack 6s ease-in-out infinite;
+        }
+        .phone-front {
+            position: absolute;
+            right: 50px;
+            top: 0;
+            z-index: 2;
+            transform: rotate(15deg);
+            animation: floatFront 6s ease-in-out infinite;
+        }
+        @keyframes floatBack {
+            0%, 100% {
+                transform: rotate(-15deg) translateY(0px);
+            }
+            50% {
+                transform: rotate(-15deg) translateY(-20px);
+            }
+        }
+        @keyframes floatFront {
+            0%, 100% {
+                transform: rotate(15deg) translateY(0px);
+            }
+            50% {
+                transform: rotate(15deg) translateY(-15px);
+            }
+        }
+        .phone-image {
+            width: 300px;
+            height: auto;
+            border: none;
+            box-shadow: none;
+        }
+        .phone-front .phone-image {
+            width: 250px;
+        }
+        .phone-showcase {
+            position: relative;
+            height: 400px;
+        }
+        .phone-back-showcase {
+            position: absolute;
+            left: 0;
+            top: 50px;
+            z-index: 1;
+            transform: rotate(-15deg);
+        }
+        .phone-front-showcase {
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 2;
+            transform: rotate(15deg);
+        }
+        .phone-showcase img {
+            width: 250px;
+            height: auto;
+            border: none;
+            box-shadow: none;
+        }
+        .color-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 3px solid #ddd;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background-size: cover;
+            background-position: center;
+        }
+        .color-circle:hover {
+            transform: scale(1.1);
+            border-color: #007bff;
+        }
+        .color-circle.active {
+            border-color: #007bff;
+            border-width: 4px;
+        }
+        .lunar-grey {
+            background: linear-gradient(45deg, #c0c0c0, #e0e0e0);
+        }
+        .midnight-black {
+            background: linear-gradient(45deg, #2c2c2c, #000000);
+        }
+        .phone-display {
+            transition: all 0.5s ease;
+        }
+        .phone-color-display img {
+            transition: all 0.5s ease;
+        }
+        .phone-size {
+            width: 300px;
+            height: 400px;
+            object-fit: contain;
+        }
+        .design-phone {
+            animation: designFloat 8s ease-in-out infinite;
+            max-width: 400px;
+        }
+        @keyframes designFloat {
+            0%, 100% {
+                transform: translateY(0px) rotateY(0deg);
+            }
+            25% {
+                transform: translateY(-10px) rotateY(5deg);
+            }
+            50% {
+                transform: translateY(-15px) rotateY(0deg);
+            }
+            75% {
+                transform: translateY(-10px) rotateY(-5deg);
+            }
+        }
+        
+        .color-option {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-phone"></i> HONOR
+            </a>
+            <div class="navbar-nav ms-auto d-flex flex-row">
+                <a class="nav-link active me-4" href="#overview">Overview</a>
+                <a class="nav-link me-4" href="#specs">Specs</a>
+                <a class="nav-link me-4" href="#tips">Tips</a>
+                <button class="btn btn-primary">Buy</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-3 fw-bold mb-4">HONOR 400 Pro</h1>
+                    <p class="lead mb-4 fs-5">AI ✨ | 200MP Ultra-Clear AI Camera</p>
+                    <div class="d-flex gap-3 align-items-center">
+                        <button class="btn btn-primary btn-lg">
+                            Buy
+                        </button>
+                        <a href="#" class="btn-outline-secondary">
+                            Learn More <i class="bi bi-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="phone-container">
+                        <!-- Back View Phone -->
+                        <div class="phone-back">
+                            <img id="phone-back-image" src="honor400proback.png" alt="HONOR 400 Pro Back" class="phone-image phone-display">
+                        </div>
+                        <!-- Front View Phone -->
+                        <div class="phone-front">
+                            <img id="phone-front-image" src="honor400profront.png" alt="HONOR 400 Pro Front" class="phone-image phone-display">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="py-5 bg-white">
+        <div class="container">
+            <!-- Camera System Section -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="display-4 fw-bold mb-5 text-center">200MP Ultra-clear AI Camera System¹</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-5">
+                            <div class="camera-specs text-center">
+                                <div class="spec-item mb-4">
+                                    <div class="d-flex align-items-start justify-content-center">
+                                        <div class="camera-icon me-3">
+                                            <i class="bi bi-camera-fill" style="font-size: 2rem; color: #007bff;"></i>
+                                        </div>
+                                        <div class="text-start">
+                                            <h5 class="fw-bold mb-2">200MP Ultra-clear AI Main Camera¹</h5>
+                                            <p class="mb-1">1/1.4-inch flagship ultra-clear image sensor</p>
+                                            <p class="mb-1">OIS + EIS Dual Stabilization</p>
+                                            <p class="mb-0">AI RAW Large Model enhance clarity by 50%¹⁰</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="spec-item mb-4">
+                                    <div class="d-flex align-items-start justify-content-center">
+                                        <div class="camera-icon me-3">
+                                            <i class="bi bi-camera-fill" style="font-size: 2rem; color: #007bff;"></i>
+                                        </div>
+                                        <div class="text-start">
+                                            <h5 class="fw-bold mb-2">12MP 112° Ultra Wide Camera⁹</h5>
+                                            <p class="mb-0">Capture more of the world around you</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="camera-specs text-center">
+                                <div class="spec-item mb-4">
+                                    <div class="d-flex align-items-start justify-content-center">
+                                        <div class="camera-icon me-3">
+                                            <i class="bi bi-camera-fill" style="font-size: 2rem; color: #007bff;"></i>
+                                        </div>
+                                        <div class="text-start">
+                                            <h5 class="fw-bold mb-2">50MP Telephoto Camera¹</h5>
+                                            <p class="mb-1">Sony customized sensor IMX856</p>
+                                            <p class="mb-1">50MP, 3x Optical zoom</p>
+                                            <p class="mb-0">OIS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="spec-item">
+                                    <div class="d-flex align-items-start justify-content-center">
+                                        <div class="camera-icon me-3">
+                                            <i class="bi bi-camera-fill" style="font-size: 2rem; color: #007bff;"></i>
+                                        </div>
+                                        <div class="text-start">
+                                            <h5 class="fw-bold mb-2">50MP Portrait Selfie Camera¹</h5>
+                                            <p class="mb-0">f/2.0 aperture</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design Section -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 order-lg-2">
+                    <h2 class="display-4 fw-bold mb-4">Design of Future</h2>
+                    <p class="lead mb-4">Precision-engineered for impact, the HONOR 400 Pro features an iconic Multi-Angle layout in a sleek design that stuns at first sight.</p>
+                    <div class="design-features">
+                        <div class="feature-item mb-3">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            <span>Iconic Multi-Angle Camera Layout</span>
+                        </div>
+                        <div class="feature-item mb-3">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            <span>Premium Metallic Finish</span>
+                        </div>
+                        <div class="feature-item mb-3">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            <span>Ergonomic Design</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            <span>IP68 Water & Dust Resistance</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="design-showcase">
+                        <img src="honor400proback.png" alt="HONOR 400 Pro Design" class="img-fluid design-phone">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Color Options Section -->
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2 class="display-4 fw-bold mb-4">The Color of Wonder, Just for You.⁸</h2>
+                    
+                    <div class="color-options d-flex justify-content-center gap-4 mb-5">
+                        <div class="color-option" data-color="lunar-grey">
+                            <div class="color-circle lunar-grey active"></div>
+                            <p class="mt-2 fw-bold">Lunar Grey</p>
+                        </div>
+                        <div class="color-option" data-color="midnight-black">
+                            <div class="color-circle midnight-black"></div>
+                            <p class="mt-2 fw-bold">Midnight Black</p>
+                        </div>
+                    </div>
+                    <!-- Phone Display Area -->
+                    <div class="phone-color-display">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 text-center">
+                                <img id="phone-image" src="lunarGrey.png" alt="HONOR 400 Pro" class="img-fluid phone-size">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold mb-3">Key Features</h2>
+                    <p class="lead text-muted">Discover what makes the HONOR 400 Pro extraordinary</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card feature-card h-100 text-center p-4">
+                        <div class="card-body">
+                            <i class="bi bi-camera-fill text-primary" style="font-size: 3rem;"></i>
+                            <h5 class="card-title mt-3">200MP AI Camera</h5>
+                            <p class="card-text">Ultra-Clear AI Camera with advanced photography features for stunning photos in any lighting condition.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100 text-center p-4">
+                        <div class="card-body">
+                            <i class="bi bi-lightning-charge-fill text-warning" style="font-size: 3rem;"></i>
+                            <h5 class="card-title mt-3">AI-Powered Performance</h5>
+                            <p class="card-text">Advanced AI processing with Snapdragon 7 Gen 3 chipset for intelligent performance optimization.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100 text-center p-4">
+                        <div class="card-body">
+                            <i class="bi bi-cpu-fill text-success" style="font-size: 3rem;"></i>
+                            <h5 class="card-title mt-3">66W SuperCharge</h5>
+                            <p class="card-text">Fast charging technology that powers your HONOR 400 Pro from 0 to 100% in just 45 minutes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100 text-center p-4">
+                        <div class="card-body">
+                            <i class="bi bi-display text-info" style="font-size: 3rem;"></i>
+                            <h5 class="card-title mt-3">6.7" OLED Display</h5>
+                            <p class="card-text">Stunning 120Hz refresh rate OLED display with HDR10+ support for vibrant and smooth visuals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100 text-center p-4">
+                        <div class="card-body">
+                            <i class="bi bi-shield-check text-danger" style="font-size: 3rem;"></i>
+                            <h5 class="card-title mt-3">MagicOS 7.2</h5>
+                            <p class="card-text">Latest MagicOS with AI-powered features, enhanced privacy protection, and seamless user experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100 text-center p-4">
+                        <div class="card-body">
+                            <i class="bi bi-fingerprint text-secondary" style="font-size: 3rem;"></i>
+                            <h5 class="card-title mt-3">AI Photography</h5>
+                            <p class="card-text">Intelligent scene recognition, night mode enhancement, and AI-powered portrait photography for perfect shots.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specs Section -->
+    <section id="specs" class="py-5 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Dimensions and Weight -->
+                    <div class="spec-section mb-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="fw-bold mb-0">Dimensions and Weight</h3>
+                            <i class="bi bi-chevron-up"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-2">
+                                    <strong>Height</strong><br>
+                                    160.8 mm
+                                </div>
+                                <div class="mb-2">
+                                    <strong>Width</strong><br>
+                                    76.1 mm
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-2">
+                                    <strong>Depth</strong><br>
+                                    8.1 mm
+                                </div>
+                                <div class="mb-2">
+                                    <strong>Weight</strong><br>
+                                    Approx. 205 g (including the battery)
+                                </div>
+                            </div>
+                        </div>
+                        <small class="text-muted">*The actual dimensions, weight may vary depending on the configuration, manufacturing process, and measurement method.</small>
+                    </div>
+
+                    <!-- Display -->
+                    <div class="spec-section mb-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="fw-bold mb-0">Display</h3>
+                            <i class="bi bi-chevron-up"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-2">
+                                    <strong>Size</strong><br>
+                                    6.7 inches
+                                </div>
+                                <small class="text-muted">*With a rounded corners design on the display, the diagonal length of the screen is 6.7 inches when measured according to the standard rectangle (the actual viewable area is slightly smaller).</small>
+                                <div class="mb-2 mt-3">
+                                    <strong>Color</strong><br>
+                                    1.07 billion colors
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-2">
+                                    <strong>Type</strong><br>
+                                    AMOLED
+                                </div>
+                                <div class="mb-2">
+                                    <strong>Resolution</strong><br>
+                                    2800×1280
+                                </div>
+                                <small class="text-muted">*With a rounded corners design on the display, the resolution of the screen is 2800×1280 Pixels when measured according to the standard rectangle (the actual viewable area is slightly smaller).</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Processor -->
+                    <div class="spec-section mb-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="fw-bold mb-0">Processor</h3>
+                            <i class="bi bi-chevron-up"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-2">
+                                    <strong>CPU Model</strong><br>
+                                    Snapdragon 8 Gen 3
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-2">
+                                    <strong>GPU</strong><br>
+                                    Adreno 750
+                                </div>
+                                <div class="mb-2">
+                                    <strong>CPU Type</strong><br>
+                                    Octa-core
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- System -->
+                    <div class="spec-section mb-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="fw-bold mb-0">System</h3>
+                            <i class="bi bi-chevron-up"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-2">
+                                    <strong>Operating System</strong><br>
+                                    MagicOS 9.0 (Based on Android 15)
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-2">
+                                    <strong>User Interface</strong><br>
+                                    MagicOS 9.0
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Memory -->
+                    <div class="spec-section mb-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="fw-bold mb-0">Memory</h3>
+                            <i class="bi bi-chevron-up"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-2">
+                                    <strong>12GB+512GB</strong>
+                                </div>
+                                <small class="text-muted">*The available internal storage may be smaller as part of the internal storage is occupied by software.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rear Camera -->
+                    <div class="spec-section mb-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="fw-bold mb-0">Rear Camera</h3>
+                            <i class="bi bi-chevron-up"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-2">
+                                    <strong>Rear Camera</strong><br>
+                                    200MP Ultra-clear AI Main Camera (f/1.9, OIS)<br>
+                                    50MP Telephoto Camera (f/2.4, OIS)<br>
+                                    12MP Ultra Wide Camera(f/2.2)
+                                </div>
+                                <small class="text-muted">*The actual image resolution may vary depending on the shooting mode.</small>
+                                <div class="mb-2 mt-3">
+                                    <strong>Zoom Mode</strong><br>
+                                    Up to 50x digital zoom
+                                </div>
+                                <small class="text-muted">*There are slight differences between various modes. Please refer to actual situations.</small>
+                                <div class="mb-2 mt-3">
+                                    <strong>Image Resolution</strong><br>
+                                    Support up to 16384×12288 pixels
+                                </div>
+                                <small class="text-muted">*The actual image resolution may vary depending on the shooting mode.</small>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-2">
+                                    <strong>Video Resolution</strong><br>
+                                    Support up to 3840×2160 pixels
+                                </div>
+                                <small class="text-muted">*The actual video resolution may vary depending on the shooting mode.</small>
+                                <div class="mb-2 mt-3">
+                                    <strong>Capture Mode</strong><br>
+                                    AI Enhanced Portrait, AI Super Zoom, Stage Mode, Artistic, Film Simulation, Motion Sensing Capture, Smart Focus, Moving Photo, Time-lapse, AI photography, Super Wide Angle, Aperture, Multi-Video, Night shot, Portrait mode, Photo, Pro mode, Video, Slow-Mo, Panorama, HDR, Night video, STORY, Filter, WATERMARK, SCAN DOCUMENT, Super Macro, Capture smiles, Timer, HIGH-RES, etc.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Front Camera -->
+                    <div class="spec-section mb-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="fw-bold mb-0">Front Camera</h3>
+                            <i class="bi bi-chevron-up"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-2">
+                                    <strong>Front Camera</strong><br>
+                                    50MP Camera(f/2.0)
+                                </div>
+                                <small class="text-muted">*In different photo modes, the number of pixels may be slightly different, please refer to the actual situation.</small>
+                                <div class="mb-2 mt-3">
+                                    <strong>Image Resolution</strong><br>
+                                    Support up to 8192×6144 pixels
+                                </div>
+                                <small class="text-muted">*The actual image resolution may vary depending on the shooting mode.</small>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-2">
+                                    <strong>Video Resolution</strong><br>
+                                    Support up to 3840×2160 pixels
+                                </div>
+                                <small class="text-muted">*The actual video resolution may vary depending on the shooting mode.</small>
+                                <div class="mb-2 mt-3">
+                                    <strong>Capture Mode</strong><br>
+                                    Moving Photo, Portrait, Filter, Capture smiles, Mirror reflection, Timer, Gesture control, Night, Watermark, HIGH-RES, Multi-Video, etc.
+                                </div>
+                                <div class="mb-2 mt-3">
+                                    <strong>Face Recognition</strong><br>
+                                    Supported 2D face unlock
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Battery -->
+                    <div class="spec-section mb-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="fw-bold mb-0">Battery</h3>
+                            <i class="bi bi-chevron-up"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-2">
+                                    <strong>Capacity</strong><br>
+                                    6000 mAh (typical value)
+                                </div>
+                                <small class="text-muted">*This capacity is the nominal battery capacity. The actual battery capacity for each individual phone may be slightly above or below the nominal battery capacity.</small>
+                                <div class="mb-2 mt-3">
+                                    <strong>Type</strong><br>
+                                    Lithium polymer battery(Silicon-Carbon Battery)
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-2">
+                                    <strong>Wired Charging</strong><br>
+                                    Supports up to 20V/5A SuperCharge, compatible with 11V/6A,10V/4A
+                                </div>
+                                <small class="text-muted">*The actual charging power will change intelligently with different scenarios, please refer to the actual situation.</small>
+                                <div class="mb-2 mt-3">
+                                    <strong>Standard Charger</strong><br>
+                                    HONOR 100W SuperCharge
+                                </div>
+                                <div class="mb-2">
+                                    <strong>Wireless Charging</strong><br>
+                                    50W SuperCharge
+                                </div>
+                                <small class="text-muted">*Wireless Charger is a separate purchase.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Water and Dust Resistance -->
+                    <div class="spec-section mb-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="fw-bold mb-0">Water and Dust Resistance</h3>
+                            <i class="bi bi-chevron-up"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-2">
+                                    <strong>IP68 and IP69</strong>
+                                </div>
+                                <small class="text-muted">*The phone is not professionally water resistant. It is splash-proof, water-resistant and dust-proof under normal use. HONOR 400 Pro has been tested under controlled laboratory conditions and reaches the IP69 and IP68 level in accordance with GB/T 4208-2017 (China) / IEC 60529 (international) standards. Splash, water, and dust resistances are not permanently effective, and the protective performance may decrease due to daily wear and tear.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cellular Network -->
+                    <div class="spec-section mb-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="fw-bold mb-0">Cellular Network</h3>
+                            <i class="bi bi-chevron-up"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-2">
+                                    <strong>Network Standard</strong><br>
+                                    5G NR<br>
+                                    4G LTE-FDD/LTE-TDD<br>
+                                    3G WCDMA<br>
+                                    2G GSM
+                                </div>
+                                <small class="text-muted">* In Dual SIM version, either card slot can be set to accommodate the primary or secondary SIM card.</small><br>
+                                <small class="text-muted">* Functions available on the live network depend on the situations of carrier's network and related services deployment.</small>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-2">
+                                    <strong>SIM Card</strong><br>
+                                    SIM Card 1<br>
+                                    Nano SIM card
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Connectivity and Location -->
+                    <div class="spec-section mb-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="fw-bold mb-0">Connectivity and Location</h3>
+                            <i class="bi bi-chevron-up"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <strong>WLAN</strong><br>
+                                    802.11 a/b/g/n/ac/ax/be, 2x2 MIMO<br>
+                                    2.4GHz and 5GHz and 6GHz<br>
+                                    Wi-Fi Hotspot<br>
+                                    Wi-Fi Direct
+                                </div>
+                                <div class="mb-3">
+                                    <strong>Bluetooth</strong><br>
+                                    BT5.4, BLE/SBC/AAC/LDAC/APTX/APTX HD
+                                </div>
+                                <div class="mb-3">
+                                    <strong>Infrared Remote Control</strong><br>
+                                    Supported
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <strong>Positioning</strong><br>
+                                    GPS/AGPS/GLONASS/BeiDou/Galileo/Q ZSS<br>
+                                    Network-Based Positioning<br>
+                                    WLAN-Based Positioning
+                                </div>
+                                <div class="mb-3">
+                                    <strong>Others</strong><br>
+                                    Support OTG<br>
+                                    USB: USB Type-C, USB 2.0<br>
+                                    Earjack: Type-C<br>
+                                    Support Video Call (operators and third-party software)
+                                </div>
+                                <small class="text-muted">*This function may vary with operators in different countries or regions. Please consult local network operator.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sensors -->
+                    <div class="spec-section mb-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="fw-bold mb-0">Sensors</h3>
+                            <i class="bi bi-chevron-up"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <strong>Sensors</strong><br>
+                                    Gravity Sensor<br>
+                                    Fingerprint Sensor<br>
+                                    Compass<br>
+                                    Ambient Light Sensor<br>
+                                    Proximity Sensor (Ultrasonic approach, non-physical approach sensor)
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <strong>NFC</strong><br>
+                                    Supported
+                                </div>
+                                <small class="text-muted">1. Only Card Emulation mode and Reader / Writer mode are supported. Peer-to-Peer mode is no longer supported.</small><br>
+                                <small class="text-muted">2. The NFC sensing area is on the right size of Camera on the back of the mobile phone.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Media and Audio -->
+                    <div class="spec-section mb-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="fw-bold mb-0">Media and Audio</h3>
+                            <i class="bi bi-chevron-up"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <strong>Sound Effect</strong><br>
+                                    HONOR Sound
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <strong>Stereo Amplifier</strong><br>
+                                    Supported
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- In the Box -->
+                    <div class="spec-section mb-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="fw-bold mb-0">In the Box</h3>
+                            <i class="bi bi-chevron-up"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ol>
+                                    <li>Phone(Built-in battery) x1</li>
+                                    <li>HONOR SuperCharge x1(Charger not included in Europe)*</li>
+                                    <li>Type-C Cable x1(Europe is C2C, other regions are A2C)*</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Tips Section -->
+    <section id="tips" class="bg-light py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold mb-3">Tips & Tricks</h2>
+                    <p class="lead text-muted">Get the most out of your HONOR 400 Pro</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-camera-fill text-primary me-3" style="font-size: 2rem;"></i>
+                                <h5 class="card-title mb-0">Camera Tips</h5>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-lightbulb text-warning me-2"></i>Use AI Scene Recognition for automatic optimization</li>
+                                <li class="mb-2"><i class="bi bi-lightbulb text-warning me-2"></i>Enable Night Mode for low-light photography</li>
+                                <li class="mb-2"><i class="bi bi-lightbulb text-warning me-2"></i>Try Portrait Mode for professional-looking photos</li>
+                                <li class="mb-2"><i class="bi bi-lightbulb text-warning me-2"></i>Use the 200MP mode for maximum detail</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-lightning-charge-fill text-warning me-3" style="font-size: 2rem;"></i>
+                                <h5 class="card-title mb-0">Battery Optimization</h5>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-lightbulb text-warning me-2"></i>Use 66W SuperCharge for fastest charging</li>
+                                <li class="mb-2"><i class="bi bi-lightbulb text-warning me-2"></i>Enable Battery Optimization in settings</li>
+                                <li class="mb-2"><i class="bi bi-lightbulb text-warning me-2"></i>Use Dark Mode to save battery on OLED display</li>
+                                <li class="mb-2"><i class="bi bi-lightbulb text-warning me-2"></i>Close unused apps to extend battery life</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-gear-fill text-success me-3" style="font-size: 2rem;"></i>
+                                <h5 class="card-title mb-0">Performance Tips</h5>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-lightbulb text-warning me-2"></i>Keep MagicOS 7.2 updated for best performance</li>
+                                <li class="mb-2"><i class="bi bi-lightbulb text-warning me-2"></i>Use Game Mode for optimized gaming experience</li>
+                                <li class="mb-2"><i class="bi bi-lightbulb text-warning me-2"></i>Enable 120Hz refresh rate for smooth scrolling</li>
+                                <li class="mb-2"><i class="bi bi-lightbulb text-warning me-2"></i>Clear cache regularly to maintain speed</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-shield-check text-info me-3" style="font-size: 2rem;"></i>
+                                <h5 class="card-title mb-0">Security & Privacy</h5>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-lightbulb text-warning me-2"></i>Set up fingerprint and face unlock</li>
+                                <li class="mb-2"><i class="bi bi-lightbulb text-warning me-2"></i>Enable App Lock for sensitive applications</li>
+                                <li class="mb-2"><i class="bi bi-lightbulb text-warning me-2"></i>Use Private Space for confidential files</li>
+                                <li class="mb-2"><i class="bi bi-lightbulb text-warning me-2"></i>Regularly update security patches</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold mb-3">Gallery</h2>
+                    <p class="lead text-muted">Explore the HONOR 400 Pro from every angle</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="honor 400 pro.png" alt="HONOR 400 Pro Front View" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="honor 400 pro.png" alt="HONOR 400 Pro Back View" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="honor 400 pro.png" alt="HONOR 400 Pro Side View" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="honor 400 pro.png" alt="HONOR 400 Pro Camera Module" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="honor 400 pro.png" alt="HONOR 400 Pro Display Quality" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="honor 400 pro.png" alt="HONOR 400 Pro Color Options" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold mb-3">Get In Touch</h2>
+                    <p class="lead">Have questions about the HONOR 400 Pro? We're here to help!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 text-center mb-4">
+                    <i class="bi bi-telephone-fill text-primary" style="font-size: 2rem;"></i>
+                    <h5 class="mt-3">Call Us</h5>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="col-lg-4 text-center mb-4">
+                    <i class="bi bi-envelope-fill text-primary" style="font-size: 2rem;"></i>
+                    <h5 class="mt-3">Email Us</h5>
+                    <p>support@honor.com</p>
+                </div>
+                <div class="col-lg-4 text-center mb-4">
+                    <i class="bi bi-geo-alt-fill text-primary" style="font-size: 2rem;"></i>
+                    <h5 class="mt-3">Visit Us</h5>
+                    <p>123 Tech Street, Innovation City</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 HONOR 400 Pro. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Simple Color Switching JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const colorOptions = document.querySelectorAll('.color-option');
+            const phoneImage = document.getElementById('phone-image');
+            
+            colorOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    const color = this.getAttribute('data-color');
+                    
+                    // Remove active class from all color circles
+                    document.querySelectorAll('.color-circle').forEach(circle => {
+                        circle.classList.remove('active');
+                        circle.style.borderColor = '#ddd';
+                        circle.style.borderWidth = '3px';
+                    });
+                    
+                    // Add active class to clicked color circle
+                    const clickedCircle = this.querySelector('.color-circle');
+                    clickedCircle.classList.add('active');
+                    clickedCircle.style.borderColor = '#007bff';
+                    clickedCircle.style.borderWidth = '4px';
+                    
+                    // Change phone image
+                    if (color === 'lunar-grey') {
+                        phoneImage.src = 'lunarGrey.png';
+                        phoneImage.alt = 'HONOR 400 Pro Lunar Grey';
+                    } else if (color === 'midnight-black') {
+                        phoneImage.src = 'midnightBlack.png';
+                        phoneImage.alt = 'HONOR 400 Pro Midnight Black';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
